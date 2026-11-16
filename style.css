@@ -1,4 +1,4 @@
-/* STYLE GENERAL */
+/* Style général */
 * {
     margin: 0;
     padding: 0;
@@ -10,81 +10,94 @@ body {
     background-color: #f2f4f7;
     color: #333;
     line-height: 1.6;
+    padding: 30px 15px;
 }
 
-/* EN-TETE */
-.header {
-    background-color: #163a5f;
+/* Conteneur du CV */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Section titre */
+#titre {
+    background-color: #17365d;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 15px;
 }
 
-.header h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+#titre h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
 }
 
-.header h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
+#titre h2 {
+    font-size: 17px;
+    font-weight: normal;
 }
 
-/* CONTENU PRINCIPAL */
-.container {
-    width: 85%;
-    max-width: 900px;
-    margin: 30px auto;
-}
-
-/* SECTIONS */
+/* Toutes les sections */
 section {
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 22px 30px;
+    border-bottom: 1px solid #d6dce5;
 }
 
+/* Titres des sections */
 section h2 {
-    color: #163a5f;
-    border-bottom: 2px solid #163a5f;
-    padding-bottom: 8px;
+    color: #17365d;
+    font-size: 20px;
+    text-transform: uppercase;
     margin-bottom: 15px;
+    border-bottom: 2px solid #2e75b6;
+    padding-bottom: 7px;
 }
 
-/* ELEMENTS */
-.item {
-    margin-bottom: 15px;
+/* Sous-titres */
+section h3 {
+    color: #2e75b6;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
 }
 
-.item h3 {
-    color: #245b88;
+/* Paragraphes */
+section p {
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 
-ul {
+/* Listes */
+section ul {
     padding-left: 25px;
 }
 
-/* PIED DE PAGE */
-footer {
-    background-color: #163a5f;
-    color: white;
-    text-align: center;
-    padding: 15px;
+section li {
+    font-size: 14px;
+    margin-bottom: 6px;
 }
 
-/* ADAPTATION AUX TELEPHONES */
-@media (max-width: 600px) {
-    .container {
-        width: 95%;
-    }
+/* Pied de page */
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+}
 
-    .header h1 {
-        font-size: 24px;
+/* Adaptation aux téléphones */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0;
     }
 
     section {
-        padding: 18px;
+        padding: 18px 15px;
+    }
+
+    #titre h1 {
+        font-size: 23px;
     }
 }
